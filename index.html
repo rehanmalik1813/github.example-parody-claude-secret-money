@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malik Arena</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">Neon Arcade</p>
+        <h1>MALIK ARENA</h1>
+      </div>
+      <div class="stats" aria-live="polite">
+        <div><span>Score</span><strong id="score">0</strong></div>
+        <div><span>Best</span><strong id="best">0</strong></div>
+      </div>
+    </header>
+
+    <section class="arena-wrap">
+      <canvas id="game" width="900" height="540" aria-label="Malik Arena game"></canvas>
+      <div id="overlay" class="overlay">
+        <p id="status">Survive the swarm</p>
+        <h2 id="title">READY?</h2>
+        <button id="start" type="button">START RUN</button>
+      </div>
+    </section>
+
+    <p class="hint"><kbd>WASD</kbd> / <kbd>Arrow keys</kbd> to move · Dodge enemies · Grab stars</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
